@@ -43,7 +43,7 @@ public class PessoaServico implements IGenericService<Pessoa, Long> {
 	 * Remover uma pessoa pelo id
 	 */
 	@Override
-	public void remover(@Valid Long id) {
+	public void remover(Long id) {
 		dao.remover(id);		
 	}
 

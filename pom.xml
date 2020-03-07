@@ -28,11 +28,11 @@
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>${version.org.hibernate}</version>
 		</dependency>
-		<!-- Driver do Bando de dados -->
+		<!-- Driver do Banco de dados -->
 		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>42.2.10</version>
+    		<groupId>org.postgresql</groupId>
+    		<artifactId>postgresql</artifactId>
+   	 		<version>42.2.5</version>
 		</dependency>
 
 		<!--Implementacao da Especificacao CDI -->
@@ -78,7 +78,7 @@
 				<version>3.8.1</version>
 				<configuration>
 					<source>${maven.compiler.source}</source>
-
+					
 				</configuration>
 			</plugin>
 		</plugins>

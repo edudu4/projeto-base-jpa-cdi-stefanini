@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Optional;
 
 import javax.validation.Valid;
+import javax.validation.constraints.NotEmpty;
 
 public interface IGenericService<T, I extends Serializable> {
 

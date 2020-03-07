@@ -43,6 +43,7 @@ public abstract class GenericDao<T, I extends Serializable> implements IGenericS
 	 * @valid serve para validar a entidade antes de entrar no metodo, olhar o conceito de BEAN VALIDATION
 	 * Sempre que for executar uma DML é necessario abrir uma transacao e fecha-la, pois senão a operacao não será comitada
 	 */
+	@Override
 	public T salvar(@Valid T entity) {
 		EntityTransaction t = iniciarTransacao();
 		entityManager.persist(entity);
