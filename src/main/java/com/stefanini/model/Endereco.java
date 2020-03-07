@@ -29,7 +29,6 @@ public class Endereco implements Serializable{
 	@Column(name = "CO_SEQ_ENDERECO")
 	private Long id;
  
-	@NotNull
 	@ManyToOne
 	@JoinColumn(name = "CO_SEQ_PESSOA")
 	private Pessoa id_pessoa;
@@ -73,9 +72,10 @@ public class Endereco implements Serializable{
 
 
 
-	public Endereco(@NotNull Pessoa id_pessoa, @NotNull String logradouro, String complemento,
+	public Endereco(Pessoa id_pessoa, @NotNull String logradouro, String complemento,
 			@NotNull String bairro, @NotNull String cidade, @NotNull String uf, @NotNull String cep) {
 		super();
+		this.id_pessoa = id_pessoa;
 		this.logradouro = logradouro;
 		this.complemento = complemento;
 		this.bairro = bairro;
